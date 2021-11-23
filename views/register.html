@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/registro" method="POST" class="form-register">
+        
+        
+       <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="controls" required><br>
+        
+       
+        
+       <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="controls" required><br>
+
+        
+       
+       <input type="text" name="email" id="email" placeholder="E-mail" class="controls" required><br>
+
+      
+       <h3>Fecha de Nacimiento</h3>
+       <input type="date" name="fecha"  min="1998-01-01" max="2030-12-31" placeholder="mm/dd/yyyy" class="controls"><br>
+
+       
+
+       <input type="text" name="domicilio" placeholder="Domicilio" id="domicilio" required class="controls"><br>
+
+
+     
+       <h3>Perfil de Usuario</h3>
+         
+       <input type="radio" name="perfil" value="comprador" id="comprador">
+        <label for="comprador">Comprador</label>
+
+        
+       <input type="radio" name="perfil" value="vendedor" id="vendedor">
+        <label for="vendedor">Vendedor</label>
+
+       <h3>Intereses</h3>
+
+       <input type="checkbox"name="categoria" value="Electro">
+       <label for="electro">Electro</label><br>
+       
+       <input type="checkbox"name="categoria"  value="Moda">
+       <label for="moda">Moda</label><br>
+       
+       <input type="checkbox"name="categoria" value="Hogar">
+       <label for="hogar">Hogar</label><br>
+       
+       <input type="checkbox"name="categoria" value="Jugueteria">
+       <label for="jugueteria">Jugueteria</label><br>
+       
+       <input type="checkbox" name="categoria" value="Vida sana">
+       <label for="Vida">Vida</label><br>
+
+
+
+
+
+
+
+
+         
+    </form>
+    </body>
+</html>
