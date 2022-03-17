@@ -11,6 +11,7 @@ body{
 
 h3{
     font-size: 24px;
+    text-align: center;
 }
 
 p{
@@ -18,10 +19,8 @@ p{
 
 }
 div.top-header{
-    display: flex;
     padding: 5%;
-    flex-wrap: wrap;
-
+    width: 100%;
 }
 
 header{
@@ -29,33 +28,19 @@ header{
 }
 
 header div.logo{
-    width: 23%;
-    
+    width: 50%;
+    padding: 10px;
 }
 
-header div.logo{
-    padding: 10px;
-    
-}
 header nav{
     font-size: 12px;
-
-}
-
-header ul li{
-    list-style-type: none;
-    
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-    
+    width: 100%;
+    display: none;
 }
 
 header .form {
-    display: flex;
-  }
+    width: 50%;
+}
 
 header .form .input{
     background-color: #FFF;
@@ -67,29 +52,21 @@ header .form .input{
     margin: 5px;
     
 }
-header .form .submit{
-    display: flex;
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 15%;
-    display: inline-block;
-    text-align: center;
-    
+header div.input button{
+    border: none;
+    background: none;
+    color: black;
 }
 
 header div.top-header p{
-    
     width: 100%;
-    text-align: left;
-    
-    
+    text-align: center;
 }
-
-.compra-cuotas {
+header section#top{
     display: flex;
-   
-    
+    flex-direction: row;
+    text-align: center;
+    margin: 2.5%;
 }
 
 div.burger-menu{
@@ -122,24 +99,6 @@ article div.main-article{
     
     
 }
-
-.discount,
-.description{
-   
-    font-size: 16px;
-    font-weight: normal;
-   
-}
-
-h3,
-.description{
-    color: #666;
-}
-
-section.banner img{
-    width: 100%;
-}
-
 main{
     width: 90%;
 
@@ -147,67 +106,44 @@ main{
 
 main section article{
     background-color: #fff;
-    margin: 10px;
+    margin: auto;
 }
 
-main section article img{
+img{
     width: 100%;
 }
 
 main section article i,
 .discount{
     color: #39b54a;
+
 }
-.description {
-    display: none;
+.description{
+    text-align: center;
     opacity: 0%;
-    transition: all 450ms;
-    
-}
-.description:hover {
-    opacity: 100%;
-}
-
-nav {
     display: none;
-}
-
-@media (min-width: 361px) {
-    main article section {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    nav {
-        display: block;
-    }
-    div.burger-menu {
-        display: none;
-    }
-    main {
-        flex-wrap: nowrap;
-    }
-    .description {
-        display: block;
-    }
-}
-
-@media (min-width: 769px) {
-}
-
-main section article i{
-    display: block;
     font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 45px;
-
-    
+    color: #666;
 }
 
+footer{
+    text-align: center;
+
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer p{
+    margin: 5%;
+}
+footer i{
+    font-size: 2em;
+    margin:auto;
+    color: #03264C;
+}
+/*testeando*/
 main section .products{
     display: flex;
     flex-direction: row;
@@ -218,7 +154,6 @@ main section .products{
 }
 
 main section .products article{
-    width: 45%;
     flex-grow: 1;
     width: 250px;
     margin: 10px;
@@ -229,39 +164,128 @@ main section .products article{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    width: 100%;
 
 }
 
-#lista-1 li {
+#lista-2 li,#lista-1 li {
    margin-right: 10px;
    padding: 0 4px;
    display: inline;
-    
+}
 
-}
-#lista-2 li {
-    margin-left: 10px;
-    padding: 0 4px;
-    display: inline;
-    
-}
 
 .price-discount{
     display: flex;
     flex-wrap: wrap;
-    
-    
+    text-align: center;
 }
 
 .price-discount .price{
     width: 30%;
 }
-
 .price-discount .discount{
-    width: 70%;
+    width: 50%;
+}
+.price-discount .fas-fa-truck {
+    display: flex;
+    width: 10%;
+    top: 30px;
 }
 
-.fas-fa-truck {
-    display: flex;
-    align-items: center;
+/*/*test del test*/
+main section article div.main-article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 10px;
+    top: -40px;
+    transition:  transform 2s;
+    }  
+     main section article div.main-article i:hover {
+        transform: rotate(360deg);
+      }
+
+/*testenado stylos*/
+*{
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+
 }
+body{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+    text-justify:auto;
+}
+body form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #0044AA;
+    background-color: #fff;
+    width: 50%;
+    margin-top: 5%;
+}
+body form section{
+    flex-direction: row;
+}
+body form input{
+     margin-bottom: 10px;
+}
+button{
+    width: 100%;
+    background-color: #666;
+    color: #fff;
+    border: none;
+}
+button:hover{
+    background-color: #0022AA;
+}
+
+
+@media (min-width: 769px) {
+        header nav {
+            display: block;
+        }
+        div.burger-menu {
+            display: none;
+        }
+        main {
+            flex-wrap: nowrap;
+        }
+        .description {
+            display: block;
+            opacity: 100%;
+        }
+        main section article i{
+           position: relative;
+        }
+
+
+        header div.top-header p{
+            width: 50%;
+        }
+        header section#top{
+            width: 50%;
+        }
+        div.top-header{
+            display: flex;
+            flex-direction: row;
+        }
+        footer ul{
+            flex-direction: row;
+        }
+        
+}
+
+
